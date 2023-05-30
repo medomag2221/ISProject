@@ -11,9 +11,9 @@ namespace ISProject.Dal.DatabaseModels
     {
         [Key]
         public int HoldingId { get; set; }
+        public string HoldingName { get; set; }
         public int DirectorId { get; set; }
         public string MobileNumber { get; set; }
-        public string CompanyDetails { get; set; }
         public string OtherInformation { get; set; }
     }
 }

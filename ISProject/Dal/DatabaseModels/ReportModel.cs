@@ -18,4 +18,10 @@ namespace ISProject.Dal.DatabaseModels
         public float Spending { get; set; }
         public float Income { get; set; }
     }
+    public class ImportExportModel
+    {
+        public float Coming { get; set; }
+        public float Spending { get; set; }
+        public float Income { get; set; }
+    }
 }

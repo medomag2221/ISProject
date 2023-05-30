@@ -8,22 +8,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ISProject.Realizations
 {
     public class ISResourceService : IISResourceService
     {
         private readonly ISDataContext _dbContext;
-        private readonly PasswordHasher passwordHasher = new PasswordHasher();
+        private readonly PasswordHasher _passwordHasher = new PasswordHasher();
 
         public ISResourceService(ISDataContext dbContext)
         {
             _dbContext = dbContext;
         }
+
+        public void AddCompany(CompanyModel company)
+        {
+            _dbContext.Companys.Add(company);
+            _dbContext.SaveChanges();
+        }
+
+        public void AddHolding(HoldingModel holding)
+        {
+            _dbContext.Holdings.Add(holding);
+            _dbContext.SaveChanges();
+        }
+
         public UserModel GetUserByLoginAndPassword(AuthorisationDto auth)
         {
-            var user = _dbContext.Users.FirstOrDefault(u => u.Login == auth.Login && passwordHasher.VerifyPassword(u.PasswordHash, passwordHasher.HashPassword(auth.Password)));
-            if (user != null)
+            var user = _dbContext.Users.FirstOrDefault(u => u.Login == auth.Login);
+            if (user != null && _passwordHasher.VerifyPassword(auth.Password, user.PasswordHash))
             {
                 return user;
             }
@@ -35,7 +50,7 @@ namespace ISProject.Realizations
 
         public void RegisterUser(UserModel user)
         {
-            user.PasswordHash = passwordHasher.HashPassword(user.PasswordHash);
+            user.PasswordHash = _passwordHasher.HashPassword(user.PasswordHash);
             _dbContext.Users.Add(user);
             _dbContext.SaveChanges();
         }

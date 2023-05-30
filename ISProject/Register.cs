@@ -1,4 +1,5 @@
-﻿using ISProject.Interfaces;
+﻿using ISProject.Dal.DatabaseModels;
+using ISProject.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,15 +61,14 @@ namespace ISProject
             {
                 new ErrorForm(this, "Введите email").Show();
             }
-            else if (Email.Text == String.Empty)
-            {
-                new ErrorForm(this, "Введите email").Show();
-            }
             else if (Login.Text == String.Empty)
             {
                 new ErrorForm(this, "Введите логин").Show();
             }
-
+            else if (JobTitle.Text == String.Empty)
+            {
+                new ErrorForm(this, "Выберите должность").Show();
+            }
             else if (Passwd1.Text == String.Empty)
             {
                 new ErrorForm(this, "Введите пароль").Show();
@@ -78,15 +78,30 @@ namespace ISProject
             {
                 new ErrorForm(this, "Повторите пароль").Show();
             }
-            else if (JobTitle.Text == String.Empty)
-            {
-                new ErrorForm(this, "Выберите должность").Show();
-            }
-            else if (Passwd2 != Passwd1)
+            else if (Passwd2.Text != Passwd1.Text)
             {
                 new ErrorForm(this, "Пароли не совпадают. Убедитесь, что введенные пароли совпадают и повторите попытку").Show();
             }
+            else
+            {
+                var user = new UserModel
+                {
+                    FirstName = FirstName.Text,
+                    SecondName = SecondName.Text,
+                    LastName = LastName.Text,
+                    Email = Email.Text,
+                    Login = Login.Text,
+                    JobTitle = JobTitle.Text,
+                    PasswordHash = Passwd1.Text
+                };
+                _resourceService.RegisterUser(user);
+                new SuccessForm(this, "Регистрация успешна").Show();
+            }
 
+        }
+
+        private void JobTitle_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

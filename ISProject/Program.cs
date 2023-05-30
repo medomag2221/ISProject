@@ -31,7 +31,11 @@ namespace ISProject
                  services.AddSingleton<Authorization>();
                  services.AddSingleton<ErrorForm>();
                  services.AddSingleton<Register>();
-                 
+                 services.AddSingleton<SuccessForm>();
+                 services.AddSingleton<MainMenu>();
+                 services.AddSingleton<AddingHolding>();
+                 services.AddSingleton<AddingCompany>();
+
              });
             using (var host = builder.Build())
             {

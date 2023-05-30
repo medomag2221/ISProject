@@ -55,7 +55,7 @@
             // 
             // SecondName
             // 
-            this.SecondName.Location = new System.Drawing.Point(211, 120);
+            this.SecondName.Location = new System.Drawing.Point(12, 120);
             this.SecondName.Name = "SecondName";
             this.SecondName.PlaceholderText = "Фамилия";
             this.SecondName.Size = new System.Drawing.Size(193, 27);
@@ -64,7 +64,7 @@
             // 
             // FirstName
             // 
-            this.FirstName.Location = new System.Drawing.Point(12, 120);
+            this.FirstName.Location = new System.Drawing.Point(211, 120);
             this.FirstName.Name = "FirstName";
             this.FirstName.PlaceholderText = "Имя";
             this.FirstName.Size = new System.Drawing.Size(193, 27);
@@ -112,6 +112,7 @@
             // 
             this.Passwd2.Location = new System.Drawing.Point(12, 273);
             this.Passwd2.Name = "Passwd2";
+            this.Passwd2.PasswordChar = '*';
             this.Passwd2.PlaceholderText = "повторно введите пароль";
             this.Passwd2.Size = new System.Drawing.Size(308, 27);
             this.Passwd2.TabIndex = 8;
@@ -161,6 +162,7 @@
             this.JobTitle.Size = new System.Drawing.Size(286, 28);
             this.JobTitle.TabIndex = 12;
             this.JobTitle.TabStop = false;
+            this.JobTitle.SelectedIndexChanged += new System.EventHandler(this.JobTitle_SelectedIndexChanged);
             // 
             // JobTitleLabel
             // 

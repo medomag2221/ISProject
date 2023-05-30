@@ -11,5 +11,10 @@ namespace ISProject.Interfaces
     {
         public UserModel GetUserByLoginAndPassword(AuthorisationDto auth);
         public void RegisterUser(UserModel user);
+
+        public void AddHolding(HoldingModel holding);
+
+        public void AddCompany(CompanyModel holding);
+
     }
 }

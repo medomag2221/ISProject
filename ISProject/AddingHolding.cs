@@ -27,15 +27,18 @@ namespace ISProject
         {
             if (HoldingNameTextBox.Text == String.Empty) 
             {
-                new ErrorForm(this, "Введите название холдинга").Show();
+                new ErrorForm(this, "Введите название холдинга").ShowDialog();
+                this.Enabled = true;
             }
             else if (HoldingMobileNumberTextBox.Text == String.Empty)
             {
-                new ErrorForm(this, "Введите контактный номер телефона").Show();
+                new ErrorForm(this, "Введите контактный номер телефона").ShowDialog();
+                this.Enabled = true;
             }
             else if (HoldingOtherInformationRichTextBox.Text == String.Empty)
             {
-                new ErrorForm(this, "Введите дополнительную информацию о холдинге или прочерк если данных нету").Show();
+                new ErrorForm(this, "Введите дополнительную информацию о холдинге или прочерк если данных нету").ShowDialog();
+                this.Enabled = true;
             }
             else
             {
@@ -46,13 +49,23 @@ namespace ISProject
                     OtherInformation = HoldingOtherInformationRichTextBox.Text,
                     DirectorId = _user.UserId
                 };
-                _resourceService.AddHolding(holding);
-                new SuccessForm(this, "Добавление холдинга успешно");
+                var ans = _resourceService.AddHolding(holding);
+                if (ans == false)
+                {
+                    new ErrorForm(this, "Такой холдинг уже существует").ShowDialog();
+                    this.Enabled = true;
+                }
+                else
+                {
+                    new SuccessForm(this, "Добавление холдинга успешно").ShowDialog();
+                    this.Enabled = true;
+                }
             }
         }
 
         private void BackButton_Click(object sender, EventArgs e)
         {
+            new MainMenu(_user, _resourceService).Show();
             this.Hide();
         }
     }

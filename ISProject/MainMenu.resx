@@ -60,4 +60,114 @@
   <metadata name="ClockTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="TableHoldingName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TableMobileNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TableOtherInformation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TableHoldingCompanys.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="HoldingIDTableTextBox.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TableDeleteButton.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="TableCompanyName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CompanyTableMobileNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CompanyTableOtherInformation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CompanyId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CompanyTableDeleteButton.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAACMuAAAjLgAAAAAAAAAA
+        AACcm53/MjE1/x8eIv8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/x8e
+        Iv8yMTX/nJud/zIxNf8fHiL/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/x8eIv8yMTX/Hx4i/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/x8eIv8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8fHiL/Hh0h/x4dIf8fHiL/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/Hx4i/x4dIf8eHSH/Hx4i/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/ISAk/zU0N/89PD//PTw//zU0N/8hICT/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yEgJP81NDf/PTw//z08P/81NDf/ISAk/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/x8eIv81NDf/xMTF/87Oz//Ozs//xMTF/zU0N/8fHiL/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8fHiL/NTQ3/8TExf/Ozs//zs7P/8TExf81NDf/Hx4i/yAf
+        I/8gHyP/IB8j/yAfI/8eHSH/Hh0h/x4dIf8eHSH/HBsf/zs6Pf/MzM3/VVRW/1VUVv/MzM3/Ozo9/xwb
+        H/8eHSH/Hh0h/x4dIf8eHSH/Hh0h/x4dIf8eHSH/Hh0h/xwbH/87Oj3/zMzN/1VUVv9VVFb/zMzN/zs6
+        Pf8cGx//Hh0h/x4dIf8eHSH/Hh0h/z08P/89PD//PTw//z08P/87Oj3/VlVY/8zMzf85ODz/OTg8/8zM
+        zf9WVVj/Ozo9/z08P/89PD//PTw//z08P/89PD//PTw//z08P/89PD//Ozo9/1ZVWP/MzM3/OTg8/zk4
+        PP/MzM3/VlVY/zs6Pf89PD//PTw//z08P/89PD//ycnK/8nJyv/Jycr/ycnK/8nJyv/R0dL/3t3e/zo5
+        PP86OTz/3t3e/9HR0v/Jycr/ycnK/8nJyv/Jycr/ycnK/8nJyv/Jycr/ycnK/8nJyv/Jycr/0dHS/97d
+        3v86OTz/Ojk8/97d3v/R0dL/ycnK/8nJyv/Jycr/ycnK/8nJyv89PD//PTw//z08P/89PD//Ozo9/1ZV
+        WP/MzM3/OTg8/zk4PP/MzM3/VlVY/zs6Pf89PD//PTw//z08P/89PD//PTw//z08P/89PD//PTw//zs6
+        Pf9WVVj/zMzN/zk4PP85ODz/zMzN/1ZVWP87Oj3/PTw//z08P/89PD//PTw//x4dIf8eHSH/Hh0h/x4d
+        If8cGx//Ozo9/8zMzf9VVFb/VVRW/8zMzf87Oj3/HBsf/x4dIf8eHSH/Hh0h/x4dIf8eHSH/Hh0h/x4d
+        If8eHSH/HBsf/zs6Pf/MzM3/VVRW/1VUVv/MzM3/Ozo9/xwbH/8eHSH/Hh0h/x4dIf8eHSH/IB8j/yAf
+        I/8gHyP/IB8j/x8eIv81NDf/xMTF/87Oz//Ozs//xMTF/zU0N/8fHiL/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8fHiL/NTQ3/8TExf/Ozs//zs7P/8TExf81NDf/Hx4i/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yEgJP81NDf/PTw//z08P/81NDf/ISAk/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8hICT/NTQ3/z08P/89PD//NTQ3/yEgJP8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/x8eIv8eHSH/Hh0h/x8eIv8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8fHiL/Hh0h/x4dIf8fHiL/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/ISAk/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAf
+        I/8gHyP/IB8j/yEgJP9eXWD/IB8j/x0cIP8dHCD/HRwg/x0cIP8dHCD/HRwg/yAfI/8gHyP/IB8j/x0c
+        IP8dHCD/HRwg/x0cIP8dHCD/HRwg/x0cIP8dHCD/HRwg/x0cIP8gHyP/IB8j/yAfI/8dHCD/HRwg/x0c
+        IP8dHCD/HRwg/x0cIP8gHyP/Xl1g/+bm5/+kpKX/j46Q/4+Pkf+Pj5H/j4+R/5CQkv+CgYT/LS0w/x4d
+        If8tLTD/goGE/5CQkv+Pj5H/j4+R/4+Pkf+Pj5H/j4+R/4+Pkf+QkJL/goGE/y0tMP8eHSH/LS0w/4KB
+        hP+QkJL/j4+R/4+Pkf+Pj5H/j46Q/6Skpf/m5uf//////////////////////////////////////+Tk
+        5P87Oj7/HRsg/zs6Pv/k5OT////////////////////////////////////////////k5OT/Ozo+/x0b
+        IP87Oj7/5OTk////////////////////////////////////////////////////////////////////
+        ////////5OTk/zs6Pv8dGyD/Ozo+/+Tk5P///////////////////////////////////////////+Tk
+        5P87Oj7/HRsg/zs6Pv/k5OT/////////////////////////////////////////////////////////
+        ///////////////////k5OT/Ozo+/x0cIP84Nzr/zMzN/+bm5v/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk
+        5P/m5ub/zMzN/zg3Ov8dHCD/Ozo+/+Tk5P//////////////////////////////////////////////
+        /////////////////////////////+Tk5P86Oj3/Hh0h/yMiJv84Nzv/Ozo+/zs6Pv87Oj7/Ozo+/zs6
+        Pv87Oj7/Ozo+/zs6Pv84Nzv/IyIm/x4dIf86Oj3/5OTk////////////////////////////////////
+        ////////////////////////////////////////7u7u/0tKTf8dHCD/IB8j/x4dIf8eHSH/Hh0h/x4d
+        If8eHSH/Hh0h/x4dIf8eHSH/Hh0h/x4dIf8gHyP/HRwg/0tKTf/u7u7/////////////////////////
+        ////////////////////////////////////////////////////////qKep/zAvM/8fHiL/IB8j/yAf
+        I/8gHyP/IB8j/yAfI/8gHyP/IB8j/yAfI/8gHyP/IB8j/x8eIv8wLzP/qKep////////////////////
+        ////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
 </root>

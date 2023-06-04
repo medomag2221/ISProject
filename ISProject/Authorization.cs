@@ -12,14 +12,9 @@ namespace ISProject
             _resourceService = resourceService;
         }
 
-        private void Authorization_Load(object sender, EventArgs e)
-        {
-        }
-
         private void Register_Click(object sender, EventArgs e)
         {
-            Register reg = new(_resourceService);
-            reg.Show();
+            new Register(_resourceService).Show();
             this.Hide();
         }
 

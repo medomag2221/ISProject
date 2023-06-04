@@ -17,6 +17,10 @@
             {
                 components.Dispose();
             }
+            if (disposing)
+            {
+                Application.Exit(); // или Environment.Exit(0);
+            }
             base.Dispose(disposing);
         }
 
@@ -32,9 +36,9 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.CompanyNameTextBox = new System.Windows.Forms.TextBox();
-            this.MobileNumberTextBox = new System.Windows.Forms.TextBox();
+            this.CompanyMobileNumberTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.CompanyOtherInformationRichTextBox = new System.Windows.Forms.RichTextBox();
             this.HoldingsComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -47,6 +51,7 @@
             this.AddCompanyButton.TabIndex = 0;
             this.AddCompanyButton.Text = "Добавить компанию";
             this.AddCompanyButton.UseVisualStyleBackColor = true;
+            this.AddCompanyButton.Click += new System.EventHandler(this.AddCompanyButton_Click);
             // 
             // BackButton
             // 
@@ -56,6 +61,7 @@
             this.BackButton.TabIndex = 1;
             this.BackButton.Text = "Вернуться в главное меню";
             this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // label1
             // 
@@ -74,13 +80,13 @@
             this.CompanyNameTextBox.Size = new System.Drawing.Size(458, 27);
             this.CompanyNameTextBox.TabIndex = 3;
             // 
-            // MobileNumberTextBox
+            // CompanyMobileNumberTextBox
             // 
-            this.MobileNumberTextBox.Location = new System.Drawing.Point(12, 76);
-            this.MobileNumberTextBox.Name = "MobileNumberTextBox";
-            this.MobileNumberTextBox.PlaceholderText = "Телефонный номер";
-            this.MobileNumberTextBox.Size = new System.Drawing.Size(458, 27);
-            this.MobileNumberTextBox.TabIndex = 4;
+            this.CompanyMobileNumberTextBox.Location = new System.Drawing.Point(12, 76);
+            this.CompanyMobileNumberTextBox.Name = "CompanyMobileNumberTextBox";
+            this.CompanyMobileNumberTextBox.PlaceholderText = "Телефонный номер";
+            this.CompanyMobileNumberTextBox.Size = new System.Drawing.Size(458, 27);
+            this.CompanyMobileNumberTextBox.TabIndex = 4;
             // 
             // label2
             // 
@@ -91,13 +97,13 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Другая информация о компании";
             // 
-            // richTextBox1
+            // CompanyOtherInformationRichTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 152);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(458, 149);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
+            this.CompanyOtherInformationRichTextBox.Location = new System.Drawing.Point(12, 152);
+            this.CompanyOtherInformationRichTextBox.Name = "CompanyOtherInformationRichTextBox";
+            this.CompanyOtherInformationRichTextBox.Size = new System.Drawing.Size(458, 149);
+            this.CompanyOtherInformationRichTextBox.TabIndex = 6;
+            this.CompanyOtherInformationRichTextBox.Text = "";
             // 
             // HoldingsComboBox
             // 
@@ -116,22 +122,23 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Выберите холдинг к которому принадлежит компания";
             // 
-            // AddingEnterprises
+            // AddingCompany
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 323);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.HoldingsComboBox);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.CompanyOtherInformationRichTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.MobileNumberTextBox);
+            this.Controls.Add(this.CompanyMobileNumberTextBox);
             this.Controls.Add(this.CompanyNameTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.AddCompanyButton);
-            this.Name = "AddingEnterprises";
+            this.Name = "AddingCompany";
             this.Text = "Добавление компании";
+            this.Load += new System.EventHandler(this.AddingCompany_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,9 +150,9 @@
         private Button BackButton;
         private Label label1;
         private TextBox CompanyNameTextBox;
-        private TextBox MobileNumberTextBox;
+        private TextBox CompanyMobileNumberTextBox;
         private Label label2;
-        private RichTextBox richTextBox1;
+        private RichTextBox CompanyOtherInformationRichTextBox;
         private ComboBox HoldingsComboBox;
         private Label label3;
     }

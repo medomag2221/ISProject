@@ -17,6 +17,10 @@
             {
                 components.Dispose();
             }
+            if (disposing)
+            {
+                Application.Exit(); // или Environment.Exit(0);
+            }
             base.Dispose(disposing);
         }
 

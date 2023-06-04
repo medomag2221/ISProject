@@ -17,6 +17,10 @@
             {
                 components.Dispose();
             }
+            if (disposing)
+            {
+                Application.Exit(); // или Environment.Exit(0);
+            }
             base.Dispose(disposing);
         }
 
@@ -162,7 +166,6 @@
             this.JobTitle.Size = new System.Drawing.Size(286, 28);
             this.JobTitle.TabIndex = 12;
             this.JobTitle.TabStop = false;
-            this.JobTitle.SelectedIndexChanged += new System.EventHandler(this.JobTitle_SelectedIndexChanged);
             // 
             // JobTitleLabel
             // 

@@ -11,7 +11,7 @@ using ISProject.Realizations;
 
 namespace ISProject
 {
-    internal static class Program
+    public static class Program
     {
         [STAThread]
         static void Main()
@@ -35,6 +35,7 @@ namespace ISProject
                  services.AddSingleton<MainMenu>();
                  services.AddSingleton<AddingHolding>();
                  services.AddSingleton<AddingCompany>();
+
 
              });
             using (var host = builder.Build())

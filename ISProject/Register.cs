@@ -23,9 +23,8 @@ namespace ISProject
 
         private void Back_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Authorization auth = new(_resourceService);
-            auth.Show();
+            new Authorization(_resourceService).Show();
+            this.Close();
         }
 
         private void PasswdCheckbox_CheckedChanged(object sender, EventArgs e)
@@ -56,7 +55,6 @@ namespace ISProject
             {
                 new ErrorForm(this, "Введите отчество или прочерк (-) если его нету").Show();
             }
-
             else if (Email.Text == String.Empty)
             {
                 new ErrorForm(this, "Введите email").Show();
@@ -73,7 +71,6 @@ namespace ISProject
             {
                 new ErrorForm(this, "Введите пароль").Show();
             }
-
             else if (Passwd2.Text == String.Empty)
             {
                 new ErrorForm(this, "Повторите пароль").Show();
@@ -94,14 +91,16 @@ namespace ISProject
                     JobTitle = JobTitle.Text,
                     PasswordHash = Passwd1.Text
                 };
-                _resourceService.RegisterUser(user);
-                new SuccessForm(this, "Регистрация успешна").Show();
+                var ans = _resourceService.RegisterUser(user);
+                if (ans == false) 
+                {
+                    new ErrorForm(this, "Пользователь с таким логином уже существует").Show();
+                }
+                else
+                {
+                    new SuccessForm(this, "Регистрация успешна").Show();
+                }
             }
-
-        }
-
-        private void JobTitle_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }
